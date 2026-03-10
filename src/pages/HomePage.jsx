@@ -3,20 +3,36 @@ import ProductCard from '../components/ProductCard';
 import SectionTitle from '../components/SectionTitle';
 import { blogs, categories, products, testimonials } from '../data/mockData';
 
+const stats = [
+  ['10K+', 'Pelanggan Aktif'],
+  ['4.9/5', 'Rating Kepuasan'],
+  ['34', 'Kota Terjangkau Same Day'],
+];
+
 const HomePage = () => (
   <div>
     <section className="hero container">
-      <p className="kicker">Slogan: Professional Wear, Compassionate Care.</p>
-      <h1>Tampil Profesional, Nyaman Seharian bersama Kai'st Medika</h1>
-      <p>
-        Brand ecommerce medis premium Indonesia untuk scrub kedokteran, jas dokter, dan perlengkapan kerja
-        tenaga kesehatan modern.
-      </p>
-      <div className="hero-cta">
-        <Link to="/katalog" className="btn btn-primary">Belanja Sekarang</Link>
-        <Link to="/katalog" className="btn btn-outline">Lihat Katalog</Link>
+      <div className="hero-surface">
+        <p className="kicker">Slogan: Professional Wear, Compassionate Care.</p>
+        <h1>Tampil Profesional, Nyaman Seharian bersama Kai'st Medika</h1>
+        <p>
+          Brand ecommerce medis premium Indonesia untuk scrub kedokteran, jas dokter, dan perlengkapan kerja
+          tenaga kesehatan modern.
+        </p>
+        <div className="hero-cta">
+          <Link to="/katalog" className="btn btn-primary">Belanja Sekarang</Link>
+          <Link to="/katalog" className="btn btn-outline">Lihat Katalog</Link>
+        </div>
+        <input className="search" placeholder="Cari scrub, jas dokter, surgical cap..." />
+        <div className="stats-grid">
+          {stats.map(([value, label]) => (
+            <div key={label} className="stat-item">
+              <strong>{value}</strong>
+              <span>{label}</span>
+            </div>
+          ))}
+        </div>
       </div>
-      <input className="search" placeholder="Cari scrub, jas dokter, surgical cap..." />
     </section>
 
     <section className="container">

@@ -1,0 +1,14 @@
+<svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="56" height="56" rx="16" fill="url(#grad)"/>
+  <path d="M15 30h30" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M30 15v30" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="30" cy="30" r="22" stroke="white" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="72" y="27" fill="#0F5F88" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Kai'st Medika</text>
+  <text x="72" y="44" fill="#6B7280" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Professional Wear, Compassionate Care</text>
+  <defs>
+    <linearGradient id="grad" x1="2" y1="2" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F5F88"/>
+      <stop offset="1" stop-color="#8AA895"/>
+    </linearGradient>
+  </defs>
+</svg>

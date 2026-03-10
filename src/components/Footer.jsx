@@ -2,7 +2,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="container footer-grid">
       <div>
-        <h3>Kai'st Medika</h3>
+        <img src="/logo-kaist-medika.svg" alt="Kai'st Medika" className="footer-logo" />
         <p>Scrub & lifestyle medis premium untuk tenaga kesehatan Indonesia.</p>
       </div>
       <div>
@@ -19,6 +19,7 @@ const Footer = () => (
       </div>
       <div>
         <h4>Newsletter</h4>
+        <p className="muted-light">Dapatkan update promo & koleksi terbaru.</p>
         <input placeholder="Email Anda" />
         <button className="btn btn-primary">Langganan</button>
       </div>
