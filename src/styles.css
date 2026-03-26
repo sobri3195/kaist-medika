@@ -53,6 +53,15 @@ main { background: linear-gradient(#fff, var(--bg)); min-height: 80vh; }
   border-radius: 20px;
   background: linear-gradient(135deg, #f5fbff, #eef7f2);
   border: 1px solid #dceaf5;
+  display: grid;
+  grid-template-columns: 1.2fr minmax(260px, .8fr);
+  align-items: center;
+  gap: 1.2rem;
+}
+.hero-illustration {
+  width: 100%;
+  max-width: 440px;
+  justify-self: end;
 }
 .hero h1 { font-size: clamp(2rem, 5vw, 3.3rem); max-width: 16ch; margin: .8rem 0; }
 .hero p { max-width: 60ch; color: var(--muted); }
@@ -126,7 +135,14 @@ select,input,textarea { width: 100%; border: 1px solid #d1d5db; border-radius: 1
   .nav-wrap { gap: .5rem; }
   .brand-logo { height: 34px; }
   .hero { padding-top: 2rem; }
-  .hero-surface { border-radius: 16px; }
+  .hero-surface {
+    border-radius: 16px;
+    grid-template-columns: 1fr;
+  }
+  .hero-illustration {
+    justify-self: center;
+    max-width: 360px;
+  }
   .card-actions .btn { width: 100%; text-align: center; }
   .wa-float { right: .7rem; bottom: .7rem; padding: .7rem .9rem; }
 }
