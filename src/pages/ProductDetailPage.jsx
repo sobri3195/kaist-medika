@@ -20,6 +20,14 @@ const ProductDetailPage = () => {
         <p><strong>Bahan:</strong> {product.material}</p>
         <p><strong>Warna:</strong> {product.colors.join(', ')}</p>
         <p><strong>Ukuran:</strong> {product.sizes.join(', ')}</p>
+        {product.hashtags?.length ? (
+          <p className="detail-hashtags">
+            <strong>Hashtag:</strong>{' '}
+            {product.hashtags.map((tag) => (
+              <span key={tag} className="hashtag-chip">{tag}</span>
+            ))}
+          </p>
+        ) : null}
         <p><strong>Size Chart:</strong> S (46), M (50), L (54), XL (58) cm lingkar dada.</p>
         <div className="card-actions">
           <button className="btn btn-primary">Tambah ke Cart</button>

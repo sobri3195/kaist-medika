@@ -8,6 +8,13 @@ const ProductCard = ({ product }) => (
     <h3>{product.name}</h3>
     <p className="muted">{product.category}</p>
     <strong>{formatRupiah(product.price)}</strong>
+    {product.hashtags?.length ? (
+      <div className="hashtag-list">
+        {product.hashtags.map((tag) => (
+          <span key={tag} className="hashtag-chip">{tag}</span>
+        ))}
+      </div>
+    ) : null}
     <div className="card-actions">
       <button className="btn btn-outline">♡ Wishlist</button>
       <button className="btn btn-primary">+ Cart</button>
