@@ -237,6 +237,22 @@ export const products = [
       'Paket lengkap jaga malam berisi item esensial untuk tenaga medis: tampil rapi, nyaman, dan siap bertugas tanpa repot belanja terpisah.',
     hashtags: ['#BestValue', '#NightShift', '#BundleNakes', '#ReadyToDuty'],
   },
+  {
+    id: 17,
+    slug: 'scrub-set-vitalcore-forest-green',
+    name: 'Scrub Set VitalCore Forest Green',
+    category: 'Scrub Set',
+    price: 389000,
+    oldPrice: 439000,
+    image: 'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=900&q=80',
+    colors: ['Forest Green', 'Steel Grey'],
+    sizes: ['S', 'M', 'L', 'XL'],
+    badge: 'Baru Hari Ini',
+    material: 'Flexweave premium breathable anti-kusut',
+    description:
+      'Scrub set terbaru dengan desain modern ergonomis, nyaman dipakai seharian, dan tetap terlihat profesional selama shift sibuk.',
+    hashtags: ['#BaruHariIni', '#ScrubSet', '#NakesStyle', '#NyamanShiftPanjang'],
+  },
 ];
 
 export const testimonials = [
