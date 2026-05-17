@@ -22,7 +22,7 @@ const Navbar = () => {
           <img src="/logo-kaist-medika.svg" alt="Kai'st Medika" className="brand-logo" />
         </NavLink>
 
-        <nav className="desktop-nav">
+        <nav className="desktop-nav" aria-label="Navigasi utama">
           {links.map(([to, label]) => (
             <NavLink key={to} to={to} className="nav-link">
               {label}
@@ -31,8 +31,8 @@ const Navbar = () => {
         </nav>
 
         <div className="nav-actions">
-          <NavLink to="/wishlist">Wishlist</NavLink>
-          <NavLink to="/cart">Cart</NavLink>
+          <NavLink to="/wishlist" className="nav-icon" aria-label="Wishlist">♡</NavLink>
+          <NavLink to="/cart" className="nav-icon" aria-label="Keranjang belanja">🛒</NavLink>
           <NavLink to="/auth" className="btn btn-primary">Masuk</NavLink>
           <button
             type="button"
